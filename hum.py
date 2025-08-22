@@ -58,7 +58,7 @@ def fmt_pressure(p_kpa: float, unit: str) -> str:
     return f"{p_kpa*MMHG_PER_KPA:0.1f} mmHg" if unit == "mmHg" else f"{p_kpa:0.3f} kPa"
 
 # ---------- UI ----------
-st.title("💧 Humidity Calculator (DBT + WBT + Pressure)")
+st.title("💧 Humidity Calculator (Dry Bulb + Wet Bulb + Baro Pressure)")
 st.caption("Enter dry-bulb and wet-bulb temperatures and barometric pressure to compute relative and specific humidity.")
 
 with st.sidebar:
